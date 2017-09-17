@@ -6,3 +6,4 @@ $leandro = new Funcionario("Leandro Castro", 1985, "Rua das Flores 33 - Juiz de 
 
 echo 'Idade: '.$leandro->ObterIdade().'<br>';
 $leandro->EscreveDados();
+echo '<br>Order ID: '.$leandro->newOrder(516);

@@ -6,6 +6,7 @@ class Funcionario extends Pessoa{
   public $Salario;
   public $Cargo;
   public $DiaPagamento;
+  public $money;
 
   /* Método Construtor
   *  Inicializa as propriedades
@@ -25,7 +26,7 @@ class Funcionario extends Pessoa{
   *  Escreve o salário do funcionário
   */
   function EscreverSalario(){
-    echo "Salário: {$this->$Salario}";
+    echo "Salário: {$this->Salario}";
   }
 
   /* Método EscreveDados()
@@ -37,5 +38,9 @@ class Funcionario extends Pessoa{
     echo "Salário: {$this->Salario}<br>
           Cargo: {$this->Cargo}<br>
           Dia de pagamento: {$this->DiaPagamento}";
+  }
+
+  function newOrder( $money ){
+    return $this->money = $money;
   }
 }
